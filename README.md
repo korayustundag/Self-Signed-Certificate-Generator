@@ -1,2 +1,2 @@
-# Self-Signed-Certificate-Generator
-Self Signed Certificate Generator
+# Self Signed Certificate Generator
+Free and  Open Source
