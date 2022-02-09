@@ -15,5 +15,4 @@ Only on Windows 10/11 and Xbox
 
 ## Screenshots
 <img src="https://raw.githubusercontent.com/korayustundag/Self-Signed-Certificate-Generator/main/Shared/s1.png" width="200">
-
 <img src="https://raw.githubusercontent.com/korayustundag/Self-Signed-Certificate-Generator/main/Shared/s2.png" width="200">
