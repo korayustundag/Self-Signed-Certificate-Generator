@@ -24,7 +24,9 @@
         <TextBlock HorizontalAlignment="Left" Margin="10,516,0,0" TextWrapping="Wrap" Text="Country:" VerticalAlignment="Top" FontSize="22"/>
         <RadioButton x:Name="isSSL" Content="SSL" ToolTipService.ToolTip="Crt and Key files are export as Zip archive" Margin="10,612,0,0" VerticalAlignment="Top" FontSize="18" IsChecked="True"/>
         <RadioButton x:Name="isCode" Content="Code Sing" ToolTipService.ToolTip="Certificate is export in pfx format" Margin="10,657,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <ComboBox x:Name="yearSelect" ItemsSource="{x:Bind Years}" Margin="0,0,192,15" HorizontalAlignment="Right" Width="199" VerticalAlignment="Bottom" Height="32"/>
         <Button x:Name="btnCreate"  Content="Create" Margin="0,0,10,10" VerticalAlignment="Bottom" FontSize="22" HorizontalAlignment="Right" Width="156" Height="43" Click="btnCreate_Click"/>
-        
+        <TextBlock Margin="0,0,382,18" TextWrapping="Wrap" Text="Year(s):" FontSize="22" Height="29" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="82"/>
+
     </Grid>
 </Page>

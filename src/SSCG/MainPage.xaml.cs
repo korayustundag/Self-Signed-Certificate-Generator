@@ -11,6 +11,7 @@ using System.IO.Compression;
 using Windows.Storage;
 using Windows.Storage.Provider;
 using Windows.Storage.Pickers;
+using System.Collections.ObjectModel;
 
 namespace SSCG
 {
@@ -19,7 +20,13 @@ namespace SSCG
         public MainPage()
         {
             this.InitializeComponent();
+            Years.Add(1);
+            Years.Add(2);
+            Years.Add(3);
+            yearSelect.SelectedIndex = 0;
         }
+
+        ObservableCollection<int> Years = new ObservableCollection<int>();
 
         private string GetCert(byte[] crtdata)
         {
@@ -240,7 +247,7 @@ namespace SSCG
                     parentReq.CertificateExtensions.Add(new X509KeyUsageExtension(X509KeyUsageFlags.DigitalSignature, true));
                 }
 
-                using (X509Certificate2 parentCert = parentReq.CreateSelfSigned(DateTimeOffset.UtcNow,DateTimeOffset.UtcNow.AddYears(1)))
+                using (X509Certificate2 parentCert = parentReq.CreateSelfSigned(DateTimeOffset.UtcNow,DateTimeOffset.UtcNow.AddYears(int.Parse(yearSelect.SelectedItem.ToString()))))
                 {
                     if ((bool)isSSL.IsChecked)
                     {
