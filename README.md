@@ -18,4 +18,4 @@ Only on Windows 10/11 and Xbox
 <img src="https://raw.githubusercontent.com/korayustundag/Self-Signed-Certificate-Generator/main/Shared/s2.png" width="200">
 
 ### Version
-1.1.1.0
+1.2.2.0
