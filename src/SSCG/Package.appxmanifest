@@ -9,7 +9,7 @@
   <Identity
     Name="39251KorayUSTUNDAG.SelfSignedCertificateGenerator"
     Publisher="CN=6E165147-3C2D-40E4-8A4F-CD32FBD67FCB"
-    Version="1.1.1.0" />
+    Version="1.2.2.0" />
 
   <mp:PhoneIdentity PhoneProductId="243aa3a3-a5f9-4ac8-9222-df5cb4222595" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
